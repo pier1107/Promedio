@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Promedio{
+public static void main(String[] args) {
+        try (Scanner teclado = new Scanner(System.in)) {
+            double nota1,nota2,nota3,promedio;
+            String alumno;
+            System.out.println("Digite el nombre del alumno: ");
+            alumno = teclado.nextLine();
+            System.out.println("Nota del promedio de tareas:");
+            nota1 = teclado.nextDouble();
+            System.out.println("Nota del examen de medio curso:");
+            nota2 = teclado.nextDouble();
+            System.out.println("Nota del examen final:");
+            nota3 = teclado.nextDouble();
+            promedio=(nota1+nota2+nota3)/3;
+            System.out.println("El promedio del alumno:" +alumno+ "es de:" +promedio);
+        }
+    }
+}
